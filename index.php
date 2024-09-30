@@ -29,10 +29,21 @@ if (isset($_POST['country'])) {
 <body>
     <header>
         <h1>Welcome to The Gallery Café</h1>
-        <p>Select your country to view available items:</p>
+        
+
+<!-- Navigation Bar -->
+<nav>
+            <ul>
+                <li><a href="login.php">Login</a></li> <!-- Link to the login page -->
+                <li><a href="menu.php">Menu</a></li> <!-- Link to the menu -->
+                <li><a href="special_events.php">Special Events</a></li> <!-- Link to special events -->
+                <li><a href="promotions.php">Promotions</a></li> <!-- Link to promotions -->
+            </ul>
+        </nav>
     </header>
 
     <!-- Country Selection Form --> 
+     <p>Select your country to view available items:</p>
     <form method="POST" action="index.php">
         <label for="country">Select Country:</label>
         <select name="country" id="country" required>
